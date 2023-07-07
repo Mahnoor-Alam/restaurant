@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The Cozy Kitchen!</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/Gold White and Black Simple Restaurant Logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="order.css">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Updated: Jun 15 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>03170108562</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 10pM</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">PK</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">The Cozy Kitchen</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html #about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html #menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="index.html #specials">Specials</a></li>
+          <li><a class="nav-link scrollto" href="index.html #events">Events</a></li>
+          <li><a class="nav-link scrollto" href="index.html #chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto" href="index.html #gallery">Gallery</a></li>
+          
+          <li><a class="nav-link scrollto" href="index.html #contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#yourorder" class="book-a-table-btn scrollto d-none d-lg-flex ">Tap here to order</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Order Now at<span> The Cozy Kitchen!</span></h1>
+          <h2 >"Experience Home-Cooked Goodness, Anytime, Anywhere: Order Now and Taste the Difference!"</h2> 
+      <p>"Craving a taste of home without the hassle of cooking? Look no further! Indulge in the convenience and comfort of The Cozy Kitchen's delectable home-cooked meals delivered right to your doorstep.Place your order with confidence, knowing that each dish is prepared with love and attention to detail. Our commitment to using fresh, locally sourced ingredients means you can enjoy the goodness of homemade meals without the hassle.Treat yourself to the ultimate culinary experience from the comfort of your own home. <br> Whether you're seeking a comforting dinner for the family or a delightful meal for a special occasion, Our reliable delivery service ensures your meals arrive promptly, ensuring they're still warm and ready to be savored. </p> <p>Place your order now and let The Cozy Kitchen bring the joy of homemade cooking straight to your doorstep."</p>
+    </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+ <!-- Order Form (Hidden by default) -->
+ <section id="yourorder">
+ <div class="container-order" id="OrderForm">
+  
+   <h1>Place Your Order Here </h1>
+
+   <div class=" col-lg-12 col-md-6 form-group">
+   <form action="process_order.php" method="post" onsubmit="return showConfirmation()">
+     <label for="customerName">Name:</label>
+     <input type="text" id="customerName" name="customerName"   placeholder="Enter your name"  required>
+     <div class="validate"></div>
+    </div>
+    <div class="form-group">
+     <label for="customerEmail">Email:</label>
+     <input type="email" id="customerEmail" name="customerEmail"  placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+     <label for="menuItems">Menu Items:</label>
+     <input type="text" id="menuItems" name="menuItems" placeholder="Enter your menu" required>
+      
+    </div>
+<div class="form-group">
+     <label for="quantity">Quantity:</label>
+     <input type="number" id="quantity" name="quantity" placeholder="Enter your quantity" min="1" required>
+    </div>
+    <div class="form-group">
+      <label for="Event Date">Order Date:</label>
+      <input type="date" id="date" name="date" placeholder="Event Date" required>
+     </div>
+    <div class="text-center "><button type="submit">Place Order</button></div>
+    </form>
+  </section>
+
+ <!-- Popup (Hidden by default) -->
+ <div id="popup" class="popup" style="display: block; color: #cda45e;" >
+   <h2 id="confirmationMessage"></h2>
+ </div>
+ 
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <h3>The Cozy Kitchen</h3>
+            <p>
+              Defence Housing Authority
+              Karachi<br><br>
+              <strong>Phone:</strong>03170108562<br>
+              <strong>Email:</strong> diningdelight721@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+          
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Order</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html #events">Events </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe Our Newsletter</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+
+
+  <!-- Add any other content or sections for your website -->
+
+  <script src="order.js"></script>
+</body>
+</html>
